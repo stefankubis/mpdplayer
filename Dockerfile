@@ -6,7 +6,8 @@ RUN dnf -y install mopidy mopidy-spotify python3-devel && \
     pip install Mopidy-SomaFM && \
     pip install Mopidy-YouTube	&& \
     pip install Mopidy-MPD && \
-    pip install Mopidy-Iris
+    pip install Mopidy-Iris && \
+    dnf -y install https://archives.fedoraproject.org/pub/archive/fedora/linux/releases/14/Fedora/x86_64/os/Packages/libshout-2.2.2-5.fc12.x86_64.rpm
 
 
 ADD docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
